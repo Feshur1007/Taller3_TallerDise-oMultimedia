@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+
+</head>
+<body>
+    <div class="card">
+    <img src="" id="pokemon-img" alt="imagenPokemon">
+    <h1 id="pokemon-name"></h1>
+    <p id="pokemon-id"></p>
+    <div class="types"></div>
+    <div class="botones">
+    <button id="prev-btn">prev</button>
+    <button id="next-btn">Next</button>
+    </div>
+    </div>
+    <div id="pokemon-modal" class="modal hidden">
+    <div class="modal-content">
+    <span id="close-modal">&times;</span>
+    <h2 id="modal-name"></h2>
+    <img id="modal-img" src="" alt="pokemon grande">
+    <div class="modal-info">
+      <p><strong>Altura:</strong> <span id="modal-height"></span> m</p>
+      <p><strong>Peso:</strong> <span id="modal-weight"></span> kg</p>
+      <p id="modal-id" class="pokemon-id"></p>
+      <p><strong>Habilidades:</strong> <span id="modal-abilities"></span></p>
+    </div>
+    <div id="modal-stats" class="modal-stats"></div>
+  </div>
+</div>
+<script type="module" src= "src/main.js"></script>
+
+</body>
+</html>
